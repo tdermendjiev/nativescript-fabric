@@ -1,7 +1,4 @@
-/// <reference path="node_modules/tns-platform-declarations/ios/ios.d.ts" />
-
 import * as application from 'application';
-import { NativeScriptError } from 'application';
 import { IOS, getInstance } from "./fabric.common";
 import { FabricAppDelegate } from "./fabric.appdelegate";
 declare var Crashlytics: any, Answers: any;

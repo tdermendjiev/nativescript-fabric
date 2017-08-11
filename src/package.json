@@ -6,8 +6,9 @@
     "preclean": "npm i rimraf",
     "clean": "rimraf node_modules target",
     "postclean": "npm i",
-    "build": "ngc",
+    "build": "npm run ngc",
     "tsc": "tsc",
+    "ngc": "node --max-old-space-size=8192 ./node_modules/.bin/ngc",
     "test": "npm run build",
     "pree2e": "cd test/e2e && npm run clean && npm run tsc && tns prepare ios && tns prepare android",
     "ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**' --exclude '**/test/**'",
@@ -39,7 +40,8 @@
     "xmldom": "0.1.27"
   },
   "peerDependencies": {
-    "tns-core-modules": ">=2.3.0 || >= 3.0.0 || >=3.1.0"
+    "tns-core-modules": ">=2.3.0 || >= 3.0.0 || >=3.1.0",
+    "tns-platform-declarations": ">=2.3.0 || >= 3.0.0 || >=3.1.0"
   },
   "optionalPeerDependencies": {
     "@angular/core": ">=2.0.0 || >=4.0.0 || >=4.1.0 || >=4.2.0 || >=4.3.0"
@@ -65,7 +67,6 @@
     "tslib": "1.7.0",
     "tslint": "5.4.3",
     "tslint-eslint-rules": "4.1.0",
-    "typescript": "2.4.1",
     "zone.js": "~0.8.4"
   },
   "nativescript": {

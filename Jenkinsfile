@@ -34,14 +34,15 @@ timeout(60) {
           sh "npm run test"
           junit 'target/junit-report/junitresults-*.xml'
         }
+      }
 
-        stage('End2End Test') {
-          sh "npm run e2e"
-        }
+      stage('End2End Test') {
+        sh "cd demo && npm run build.plugin && npm i && npm run build-ios-bundle && npm run build-android-bundle"
+        sh "cd demo-angular && npm run build.plugin && npm i && npm run build-ios-bundle && npm run build-android-bundle"
+      }
 
-        stage('Publish NPM snapshot') {
-          nodeJS.publishSnapshot('.', buildNumber, branchName)
-        }
+      stage('Publish NPM snapshot') {
+        nodeJS.publishSnapshot('src', buildNumber, branchName)
       }
 
     } catch (e) {

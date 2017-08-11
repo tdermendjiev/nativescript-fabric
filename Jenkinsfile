@@ -32,7 +32,7 @@ timeout(60) {
 
         stage('Test') {
           sh "npm run test"
-          junit 'target/junit-report/junitresults-*.xml'
+          // junit 'target/junit-report/junitresults-*.xml'
         }
       }
 

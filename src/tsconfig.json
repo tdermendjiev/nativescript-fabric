@@ -19,9 +19,7 @@
     "noFallthroughCasesInSwitch": true,
     "lib": [
       "dom",
-      "es5",
-      "es2015",
-      "es2015.iterable"
+      "es2016"
     ],
     "types": [
       "jasmine"

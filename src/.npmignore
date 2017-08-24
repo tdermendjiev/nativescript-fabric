@@ -1,5 +1,11 @@
 node_modules
+*.yml
+*.gif
+*.jpg
+*.png
 *.log
 *.map
 *.ts
 !*.d.ts
+target/
+test/

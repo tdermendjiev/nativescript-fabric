@@ -1,0 +1,18 @@
+android {
+  productFlavors {
+    "nativescript-fabric" {
+      dimension "nativescript-fabric"
+    }
+  }
+}
+
+repositories {
+  mavenCentral()
+  maven { url 'https://maven.fabric.io/public' }
+}
+
+dependencies {
+  compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+    transitive = true;
+  }
+}

@@ -1,6 +1,6 @@
 import { NgModule, ErrorHandler, ModuleWithProviders, Provider, NO_ERRORS_SCHEMA } from '@angular/core';
 
-import { Fabric } from 'nativescript-fabric';
+import { Fabric } from '..';
 import { FabricErrorHandler } from './errorhandler';
 
 @NgModule({

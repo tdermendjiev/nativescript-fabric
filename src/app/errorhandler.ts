@@ -1,5 +1,5 @@
 import { ErrorHandler } from '@angular/core';
-import { Fabric } from 'nativescript-fabric';
+import { Fabric } from '..';
 
 /**
  * @name FabricErrorHandler

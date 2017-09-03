@@ -1,4 +1,3 @@
-declare module 'nativescript-fabric';
 declare module 'application';
 declare class UIResponder { }
 declare class UIApplication { }

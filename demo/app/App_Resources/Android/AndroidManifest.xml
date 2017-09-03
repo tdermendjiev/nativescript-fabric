@@ -37,12 +37,6 @@
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
-			<intent-filter>
-				<data android:scheme="demo"/>
-				<action android:name="android.intent.action.VIEW"/>
-				<category android:name="android.intent.category.DEFAULT"/>
-				<category android:name="android.intent.category.BROWSABLE"/>
-			</intent-filter>
 		</activity>
 		<activity android:name="com.tns.ErrorReportActivity"/>
     <meta-data android:name="io.fabric.ApiKey" android:value="e1e7a050ba618f4a665538581623e038db3179bb"/>

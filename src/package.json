@@ -33,9 +33,7 @@
   "dependencies": {
     "format": "0.2.2",
     "fs-extra": "4.0.1",
-    "nativescript-hook": "0.2.1",
     "simple-plist": "0.2.1",
-    "typescript": "2.4.2",
     "xcode": "0.9.3",
     "xmldom": "0.1.27"
   },
@@ -66,6 +64,7 @@
     "tslib": "1.7.0",
     "tslint": "5.4.3",
     "tslint-eslint-rules": "4.1.0",
+    "typescript": "2.4.2",
     "zone.js": "~0.8.4"
   },
   "nativescript": {
